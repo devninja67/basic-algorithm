@@ -1,6 +1,6 @@
 # basic-algorithm
 
-##Algorithms
+## Algorithms
 
 **Operation of big number by big number**
 - division of big number by big number
