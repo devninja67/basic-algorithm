@@ -1,3 +1,6 @@
+// calculate division and remain of big number by big number
+// Author: devninja67
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h> 
