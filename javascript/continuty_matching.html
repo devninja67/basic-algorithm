@@ -2,6 +2,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript">
+		// Returns all selector elements
+		const getRanges = () => Array.from(document.querySelectorAll('.hrange'));
+
+		// return value to change
+		const minValue = (v1, v2) => {
+			if(v1 < 0)  return Math.abs(v1) < v2 ? v1 : -v2;
+			else return v1 < 100 - v2 ? v1 : 100 - v2;
+		}
+
+		// Gets us an ability to sum selectors (can exclude a selector if required)
+		const sumSelectors = (exclude) => getRanges()
+		    .filter((r) => (exclude) ? r !== exclude : true)
+		    .map(r => parseInt(r.value))
+		    .reduce((a, s) => a + s);
+
+	</script>
+
 	<style type="text/css">
 		.hrange {
   		display: block;
