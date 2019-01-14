@@ -14,10 +14,35 @@
 
 		// Gets us an ability to sum selectors (can exclude a selector if required)
 		const sumSelectors = (exclude) => getRanges()
-		    .filter((r) => (exclude) ? r !== exclude : true)
-		    .map(r => parseInt(r.value))
-		    .reduce((a, s) => a + s);
+      .filter((r) => (exclude) ? r !== exclude : true)
+      .map(r => parseInt(r.value))
+      .reduce((a, s) => a + s);
+		
+		// changing before or after slider
+		const checkRanges = (idx) => {
+			// after element for increasing and before element for decreasing
+      let stride = (sumSelectors() > 100) ? 1 : -1;
+      let selectorId = idx;
+      // changing slider's value until sliders's sum equal 100
+      while(true) {
+        selectorId = (selectorId + stride + 4) % 4;
+        let selector = document.querySelector("#range" + selectorId);
+        let selectorValue = parseInt(selector.value);
+        selector.value = selectorValue + minValue(100 - sumSelectors(), selectorValue);
+        if(sumSelectors() !== 100) continue;
+        else break;
+			}
+		  document.querySelector('#amount').value = sumSelectors();
+		};
 
+		// Listening inputing slider
+		document.addEventListener('DOMContentLoaded', function() {
+		  getRanges().forEach((r, idx) => {
+		    r.addEventListener('input', (event) => {
+		      checkRanges(idx);
+		    });
+		  });
+		});
 	</script>
 
 	<style type="text/css">
