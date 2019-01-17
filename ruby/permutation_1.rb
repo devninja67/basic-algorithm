@@ -7,7 +7,7 @@
 #            312
 #            321
 
-N = ARGV[0].to_i
+N = ARGV[0].to_i == 0? 3 : ARGV[0].to_i
 
 def permutation(n)
   return [""] if n > N
