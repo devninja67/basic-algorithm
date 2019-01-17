@@ -14,3 +14,15 @@
 **Solve Continuty matching**
 - How to solve input continuity matching [on hold]
   > https://stackoverflow.com/questions/54165595/how-to-solve-input-continuity-matching/54181177
+**All Permutation of 1..N**
+- run : permutation_1.rb [N]
+-       permutation_2.rb [N]
+- inputs: 3
+- 1. permutation_1.rb
+  > outputs: 123
+  >          213
+  >          231
+  >          132
+  >          312
+  >          321
+- 2. permutation_2.rb
