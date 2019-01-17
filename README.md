@@ -19,11 +19,12 @@
 **All Permutation of 1..N**
 - inputs: 3
 - permutation_1.rb
-  > run : permutation_1.rb [N]
-  > outputs: 123__
-  >          213__
-  >          231__
-  >          132__
-  >          312__
-  >          321
+  > run : permutation_1.rb [N]<br/>
+  > outputs:<br/> 
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;213<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;231<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;312<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;321<br/>
 - permutation_2.rb
