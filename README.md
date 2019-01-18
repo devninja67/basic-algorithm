@@ -28,3 +28,11 @@
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;312<br/>
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;321<br/>
 - permutation_2.rb
+  > run : permutation_2.rb [N]<br/>
+  > outputs:<br/> 
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;213<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;231<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;312<br/>
+  > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;321<br/>
