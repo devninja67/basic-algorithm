@@ -1,3 +1,7 @@
+# Author: devninja67
+# Time Complex: O(n*log2(n))
+
+# separating array into 2 part( left and right) and merging sorted 2 parts
 def merge_sort(arr)
   len = arr.size
   return arr if len == 1
@@ -8,6 +12,7 @@ def merge_sort(arr)
   merge(left, right)
 end
 
+# merging sorted left and right array
 def merge(left, right)
   sorted = []
   until left.empty? || right.empty?
@@ -20,11 +25,13 @@ def merge(left, right)
   sorted.concat(left).concat(right)
 end
 
+# Time complex and Memory test
+# with random array(array that size is great than 10000) or given array by user
 def random_test
   n = ARGV.size
   arr = ARGV.map {|element| element.to_f}
   if n == 0
-    n = 100000 + Random.rand(100000)
+    n = 10000 + Random.rand(10000)
     arr = n.times.map{ Random.rand(n) }
   end
   merge_sort(arr[0..n-1])

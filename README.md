@@ -19,7 +19,7 @@
 **All Permutation of 1..N**
 - inputs: 3
 - permutation_1.rb
-  > run : permutation_1.rb [N]<br/>
+  > run : ruby permutation_1.rb [N]<br/>
   > outputs:<br/> 
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123<br/>
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;213<br/>
@@ -28,7 +28,7 @@
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;312<br/>
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;321<br/>
 - permutation_2.rb
-  > run : permutation_2.rb [N]<br/>
+  > run : ruby permutation_2.rb [N]<br/>
   > outputs:<br/> 
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123<br/>
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132<br/>
@@ -36,3 +36,7 @@
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;231<br/>
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;312<br/>
   > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;321<br/>
+**Merge_sort**
+- ruby merge_sort.rb <array> Or ruby merge_sort.rb
+- inputs: 23 34 33 45 34 45 67 33
+- outputs: 23 33 33 34 34 45 45 67
